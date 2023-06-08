@@ -1,5 +1,2 @@
 [server]
-staticDir = "img"
-staticDir = "datasets"
-staticDir = "scripts"
-
+staticDir = ["./img", "img", "./datasets", "./scripts"]
