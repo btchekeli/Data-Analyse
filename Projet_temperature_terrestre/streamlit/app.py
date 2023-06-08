@@ -22,7 +22,7 @@ st.markdown('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9
 with st.sidebar:
     credit_text = "Crédit : [Almanach.com](https://www.almanac.com/content/earth-day-date-activities-history)"
     st.markdown(credit_text)
-    st.image("img/earth-tree.jpg")
+     #st.image("img/earth-tree.jpg")
     
     
     choice = option_menu(
