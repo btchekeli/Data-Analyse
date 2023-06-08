@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 from streamlit_option_menu import option_menu
 
-icon = Image.open("img/temperature_icon.png")
+icon = "img/temperature_icon.png"
 st.set_page_config(
     page_title="Global warming",
     page_icon = icon,
