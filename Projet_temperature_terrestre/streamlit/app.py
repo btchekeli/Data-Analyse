@@ -71,7 +71,7 @@ with st.sidebar:
 
     # Deuxième colonne
     with col2:
-        st.image("img/github_logo.png", width=30)
+        #st.image("img/github_logo.png", width=30)
         st.write("[GitHub]( )")
         
     # 3.  
@@ -83,7 +83,7 @@ with st.sidebar:
 
     # Première colonne
     with col1:
-        st.image("img/linkedin_icon.png", width=30)
+        #st.image("img/linkedin_icon.png", width=30)
         st.write("[LinkedIn](https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-lebourg-koulibaly/)")
 
     # Deuxième colonne
