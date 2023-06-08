@@ -22,7 +22,7 @@ st.markdown('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9
 with st.sidebar:
     credit_text = "Crédit : [Almanach.com](https://www.almanac.com/content/earth-day-date-activities-history)"
     st.markdown(credit_text)
-    st.image("/img/earth-tree.jpg")
+    #st.image("/img/earth-tree.jpg")
     
     
     choice = option_menu(
@@ -49,12 +49,12 @@ with st.sidebar:
 
     # Première colonne
     with col1:
-        st.image("img/linkedin_icon.png", width=30)
+        #st.image("img/linkedin_icon.png", width=30)
         st.write("[LinkedIn](https://www.linkedin.com/in/brunel-tchekeli/)")
 
     # Deuxième colonne
     with col2:
-        st.image("img/github_logo.png", width=30)
+        #st.image("img/github_logo.png", width=30)
         st.write("[GitHub](https://github.com/btchekeli)")
 
     # 2.
