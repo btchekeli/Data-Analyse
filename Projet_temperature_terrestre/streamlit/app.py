@@ -66,7 +66,7 @@ with st.sidebar:
 
     # Première colonne
     with col1:
-        st.image("img/linkedin_icon.png", width=30)
+        #st.image("img/linkedin_icon.png", width=30)
         st.write("[LinkedIn](https://www.linkedin.com/in/guillaumebogdanowicz/)")
 
     # Deuxième colonne
