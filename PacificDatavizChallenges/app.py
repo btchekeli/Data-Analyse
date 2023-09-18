@@ -74,12 +74,14 @@ def display_header_info():
 # Load the data
 @st.cache_data
 def load_data():
-    data = pd.read_csv('pacificdatavizchallenge_fruit_cleaned_data.csv')
+    data_path = os.path.join(os.path.dirname(__file__), 'pacificdatavizchallenge_fruit_cleaned_data.csv')
+    data = pd.read_csv(data_path)
     data['mois'] = data['mois'].apply(lambda x: calendar.month_name[x])    
     return data
    
 def load_data_prix():
-    data_prix = pd.read_csv('echantillon_prix_produits_pacific_all_years1.csv')
+    data_path = os.path.join(os.path.dirname(__file__), 'echantillon_prix_produits_pacific_all_years1.csv')
+    data_prix = pd.read_csv(data_path)
     data_prix.drop("Unnamed: 0", axis=1, inplace=True)
     return data_prix
 
