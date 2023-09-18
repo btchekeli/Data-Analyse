@@ -1,4 +1,5 @@
 # Import necessary libraries
+import os
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
@@ -74,10 +75,9 @@ def display_header_info():
 @st.cache_data
 def load_data():
     data = pd.read_csv('pacificdatavizchallenge_fruit_cleaned_data.csv')
-    data['mois'] = data['mois'].apply(lambda x: calendar.month_name[x])
-    data_prix = pd.read_csv('echantillon_prix_produits_pacific_all_years.csv')
+    data['mois'] = data['mois'].apply(lambda x: calendar.month_name[x])    
     return data
-    return data_prix
+   
 def load_data_prix():
     data_prix = pd.read_csv('echantillon_prix_produits_pacific_all_years1.csv')
     data_prix.drop("Unnamed: 0", axis=1, inplace=True)
