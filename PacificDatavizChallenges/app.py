@@ -711,6 +711,9 @@ elif choice == "Ressources":
         st.subheader(" Sources des jeux de données utilisés :")   
         st.markdown('''- <a target="blank" href="https://data.gouv.nc/explore/?flg=fr&amp;disjunctive.theme&amp;disjunctive.publisher&amp;disjunctive.keyword&amp;disjunctive.attributions&amp;disjunctive.license&amp;sort=explore.popularity_score&amp;refine.keyword=PacificDatavizChallenge2023&amp;refine.attributions=+Direction+des+Affaires+V%C3%A9t%C3%A9rinaires,+Alimentaires+et+Rurales+(DAVAR)">Marché des fruits et légumes en Nouvelle-Calédonie</a>''', unsafe_allow_html=True)
         st.markdown('''- <a target="_blank" href="https://data.gouv.nc/explore/?flg=fr&amp;disjunctive.theme&amp;disjunctive.publisher&amp;disjunctive.keyword&amp;disjunctive.attributions&amp;disjunctive.license&amp;sort=explore.popularity_score&amp;refine.attributions=Direction%20des%20Affaires%20%C3%89conomiques%20(DAE)&amp;refine.keyword=PacificDatavizChallenge2023">Prix des produits alimentaires en Nouvelle-Calédonie</a>''', unsafe_allow_html=True)
+
+        st.subheader(" Code streamlit et notebook :")
+        st.info("L'ensemble des codes, données et notebooks utilisés pour la création de ce site est disponible dans mon Github à l'adresse suivante : https://github.com/btchekeli/Data-Analyse/tree/main/PacificDatavizChallenges")
         
         st.subheader("Organisateurs : ")
         col1, col2 = st.columns(2)
