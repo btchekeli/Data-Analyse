@@ -41,11 +41,14 @@ with st.sidebar:
         st.image(img, width=50)
         st.write("[LinkedIn](https://www.linkedin.com/in/brunel-tchekeli/)")
 
-    # Deuxième colonne
+  # Deuxième colonne
     with col2:
-        img = Image.open("./img/github_logo.png")
+        
+        image_path = os.path.join(os.path.dirname(__file__), "img","github_logo.png")
+        img = Image.open(image_path)
         st.image(img, width=30)
         st.write("[GitHub](https://github.com/btchekeli)")
+        
         
     
 def display_header_info():
