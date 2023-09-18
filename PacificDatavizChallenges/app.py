@@ -12,7 +12,8 @@ from PIL import Image
 
 
     
-icon = "./img/logo_principal_HB.png"
+icon_path = os.path.join(os.path.dirname(__file__), "./img/logo_principal_HB.png")
+icon = Image.open(icon_path)
 st.set_page_config(
     page_title="PacificDatavizChallenge",
     page_icon = icon,
