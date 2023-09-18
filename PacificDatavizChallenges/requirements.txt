@@ -4,3 +4,5 @@ plotly-express==0.4.1
 streamlit==1.22.0
 streamlit-option-menu==0.3.4
 wordcloud==1.9.2
+seaborn==0.12.2
+matplotlib 3.8.0
