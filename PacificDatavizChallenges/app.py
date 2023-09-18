@@ -244,6 +244,11 @@ elif choice == "Exploration des données":
         st.write("- **Liste des colonnes**",df.columns.to_list())
         st.write("- **Description du jeu de données avec describe() :**", df.describe().T)
         st.warning("**J'aurai pu développer et enrichir cette partie exploration par certains graphique de visualisation mais j'ai préféré tout afficher dans la partie 'Analyse et dataviz'**.")
+
+    with tab2:       
+        st.warning("Il n'y a rien ici. Veuillez choisir entre 'Prix des produits alimentaires' et 'Marché des fruits et légumes en Nouvelle-Calédonie' ")
+        st.info("Cet onglet (tab) est la à titre de séparateur entre les deux autres")
+    
     with tab3:
         st.header("Marché des fruits et légumes en Nouvelle-Calédonie")
         st.divider()
