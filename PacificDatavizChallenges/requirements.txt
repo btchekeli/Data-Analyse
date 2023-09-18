@@ -1,0 +1,10 @@
+geopandas==0.13.2
+matplotlib @ file:///C:/b/abs_49b2acwxd4/croot/matplotlib-suite_1679593486357/work
+matplotlib-inline @ file:///C:/ci/matplotlib-inline_1661915841596/work
+pandas==2.0.1
+plotly @ file:///C:/ci/plotly_1658142442431/work
+plotly-express==0.4.1
+seaborn @ file:///C:/b/abs_68ltdkoyoo/croot/seaborn_1673479199997/work
+streamlit==1.22.0
+streamlit-option-menu==0.3.4
+wordcloud==1.9.2
