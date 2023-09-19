@@ -5,7 +5,8 @@ import numpy as np
 from PIL import Image
 from streamlit_option_menu import option_menu
 
-icon = "img/temperature_icon.png"
+icon_path = os.path.join(os.path.dirname(__file__), "temperature_icon.png")
+icon = Image.open(icon_path)
 st.set_page_config(
     page_title="Global warming",
     page_icon = icon,
@@ -22,8 +23,9 @@ st.markdown('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9
 with st.sidebar:
     credit_text = "Crédit : [Almanach.com](https://www.almanac.com/content/earth-day-date-activities-history)"
     st.markdown(credit_text)
-    #st.image("/img/earth-tree.jpg")
-    
+    image_path = os.path.join(os.path.dirname(__file__), "img", "earth-tree.jpg")
+    img = Image.open(image_path)
+    st.image(img)
     
     choice = option_menu(
         menu_title = "Menu",
@@ -49,12 +51,16 @@ with st.sidebar:
 
     # Première colonne
     with col1:
-        #st.image("img/linkedin_icon.png", width=30)
+        image_path = os.path.join(os.path.dirname(__file__), "img", "linkedin_icon.png")
+        img = Image.open(image_path)
+        st.image(img, width=30)
         st.write("[LinkedIn](https://www.linkedin.com/in/brunel-tchekeli/)")
 
     # Deuxième colonne
     with col2:
-        #st.image("img/github_logo.png", width=30)
+        image_path = os.path.join(os.path.dirname(__file__), "img", "github_logo.png")
+        img = Image.open(image_path)
+        st.image(img, width=30)
         st.write("[GitHub](https://github.com/btchekeli)")
 
     # 2.
