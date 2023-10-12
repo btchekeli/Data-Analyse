@@ -1,0 +1,5 @@
+[server]
+staticDir = "img"
+staticDir = "datasets"
+staticDir = "scripts"
+
